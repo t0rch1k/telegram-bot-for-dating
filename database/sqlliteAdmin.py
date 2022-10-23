@@ -10,7 +10,7 @@ def sql_start():
 
 
 def check_if_admin(id):
-    cur.execute("SELECT * FROM admins WHERE id=?", (id, ))
+    cur.execute("SELECT * FROM admins WHERE id=?", (id,#admin ID ))
     info = cur.fetchall()
     return info
 
